@@ -1,0 +1,149 @@
+
+.contener_clouds { 
+    position: absolute;
+    top: 0px;
+    overflow: hidden; 
+    height: 220px; 
+    width: 100%;
+}
+.cloud, .cloud2, .cloud3 { position: relative; z-index: 100; background: #ffffff; }
+.cloud:before, .cloud:after, .cloud2:before, .cloud2:after, .cloud3:before, .cloud3:after  { position: absolute; content: ''; background: #ffffff; }
+
+/***************** CLOUD *********************/
+.cloud {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  top: 40px;
+  left: 200px;
+}
+
+.cloud:before,.cloud:after{
+  border-radius: 50px;
+}
+
+.cloud:before{
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 22px;
+}
+.cloud:after{
+  width: 80px;
+  height: 80px;
+  top: -35px;
+  right: 22px;
+}
+
+/***************** CLOUD2 *********************/
+.cloud2 {
+  width: 220px;
+  height: 40px;
+  border-radius: 40px;
+  top: 110px;
+  left: -100px;
+}
+
+.cloud2:before,.cloud2:after{
+  border-radius: 50px;
+}
+
+.cloud2:before{
+  width: 80px;
+  height: 35px;
+  top: -25px;
+  left: 22px;
+}
+.cloud2:after{
+  width: 100px;
+  height: 80px;
+  top: -42px;
+  right: 22px;
+}
+/***************** CLOUD3 *********************/
+.cloud3 {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  top: 0px;
+  left: 900px;
+}
+
+.cloud3:before,.cloud3:after{
+  border-radius: 50px;
+}
+
+.cloud3:before{
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 22px;
+}
+.cloud3:after{
+  width: 80px;
+  height: 80px;
+  top: -35px;
+  right: 22px;
+}
+
+
+/***************** CLOUD : ANIM SCALE *********************/
+.sclale {   
+  -webkit-animation: pulse 5s both infinite;
+          animation: pulse 5s both infinite;
+}
+@-webkit-keyframes pulse {
+  0% {-webkit-transform: scale3d(1, 1, 1);}
+  50% {-webkit-transform: scale3d(1.05, 1.05, 1.05);}
+  100% {-webkit-transform: scale3d(1, 1, 1);}
+}
+@keyframes pulse {
+  0% {transform: scale3d(1, 1, 1);}
+  50% { transform: scale3d(1.05, 1.05, 1.05);}
+  100% {transform: scale3d(1, 1, 1);}
+}
+
+/*****************  CLOUD : ANIM MOUVEMENT1 *********************/
+.anim_cloud1 {   
+  -webkit-animation: anim_cloud1 240s linear infinite;
+          animation: anim_cloud1 240s linear infinite;
+}
+
+@-webkit-keyframes anim_cloud1 {
+    from {-webkit-transform: translate(0px, 0px);}
+    to {-webkit-transform: translate(1000px, 0px);}
+}
+@keyframes anim_cloud1 {
+    from {transform: translate(0px, 0px);}
+    to {transform: translate(1000px, 0px);}
+}
+
+/*****************  CLOUD : ANIM MOUVEMENT2 *********************/
+.anim_cloud2 {   
+  -webkit-animation: anim_cloud2 50s linear infinite;
+          animation: anim_cloud2 50s linear infinite;
+}
+
+@-webkit-keyframes anim_cloud2 {
+    from {-webkit-transform: translate(0px, 0px);}
+    to {-webkit-transform: translate(-1000px, 0px);}
+}
+@keyframes anim_cloud2 {
+    from {transform: translate(0px, 0px);}
+    to {transform: translate(-1000px, 0px);}
+}
+
+/*****************  CLOUD : ANIM MOUVEMENT3 *********************/
+.anim_cloud3 {   
+  -webkit-animation: anim_cloud3 50s linear infinite;
+          animation: anim_cloud3 50s linear infinite;
+}
+
+@-webkit-keyframes anim_cloud3 {
+    from {-webkit-transform: translate(0px, 0px);}
+    to {-webkit-transform: translate(1000px, 0px);}
+}
+@keyframes anim_cloud3 {
+    from {transform: translate(0px, 0px);}
+    to {transform: translate(1000px, 0px);}
+}

@@ -1,0 +1,114 @@
+/********************* CLICK HOVER **********************/
+.cursorContener {
+    position: relative;
+    z-index: 19;
+    left: 50%;
+    margin-left: -39px;
+    top: -13px;
+
+    -webkit-transition: opacity 2s 3s ease;
+    -moz-transition: opacity 2s 3s ease;
+    -o-transition: opacity 2s 3s ease;
+    transition: opacity 2s 3s ease;
+
+}
+
+/* CURSOR */
+.cursorContener .cursor {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    display: block;
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-image: url('img/icon_cursor.png');
+    background-position: 53% 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 92px;
+
+    -webkit-animation: cursor 3s 0s infinite;
+    -moz-animation: cursor 3s 0s infinite;
+    -ms-animation: cursor 3s 0s infinite;
+    animation: cursor 3s 0s infinite;
+}
+
+@-webkit-keyframes cursor {
+    0% { background-position: 53% 50%}
+    14% { background-position: 88% 50%}
+    28% { background-position: 53% 50%}
+    42% { background-position: 53% 65%}
+    56% { background-position: 53% 50%}
+    62% { background-position: 48% 50%}
+    78% { background-position: 53% 50%}
+    88% { background-position: 23% 50%}
+    100% { background-position: 53% 50%}
+}
+
+@keyframes cursor {
+    0% { background-position: 53% 50%}
+    14% { background-position: 88% 50%}
+    28% { background-position: 53% 50%}
+    42% { background-position: 53% 65%}
+    56% { background-position: 53% 50%}
+    62% { background-position: 48% 50%}
+    78% { background-position: 53% 50%}
+    88% { background-position: 23% 50%}
+    100% { background-position: 53% 50%}
+}
+
+
+/* CIRCLE */
+.cursorContener .cursorCircle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    display: block;
+    height: 80px;
+    width: 80px;
+    background: url(img/wave1.png) center center no-repeat;
+
+    background-repeat: no-repeat;
+
+    -webkit-animation: cursorCircle 0.6s infinite;
+    -moz-animation: cursorCircle 0.6s infinite;
+    -ms-animation: cursorCircle 0.6s infinite;
+    animation: cursorCircle 0.6s infinite;
+
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+}
+
+@-webkit-keyframes cursorCircle {
+    from { -webkit-transform: scale(0); background-position: center center; opacity: 1; }
+    50% { opacity: 1; }
+    to { -webkit-transform: scale(1.5); background-position: center center; opacity: 0; }
+}
+@keyframes cursorCircle {
+    from { transform: scale(0); background-position: center center; opacity: 1; }
+    50% { opacity: 1; }
+    to { transform: scale(1.5); background-position: center center; opacity: 0; }
+}
+
+
+/* TEXTE */
+.cursorContener .cursorTexte {
+    position: absolute;
+    top: 60px;
+    left: -10px;
+
+    display: block;
+    width: 100px;
+    text-transform: uppercase;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    line-height: 1.2em;
+}
+
+.hideCursor { opacity: 0 !important; }

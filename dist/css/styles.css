@@ -1,0 +1,313 @@
+/******************** GENERAL *********************/
+
+::-moz-selection { background: #b3d4fc; text-shadow: none; }
+::selection      { background: #b3d4fc; text-shadow: none; }
+
+@font-face {
+	font-family: 'FuturaStd';
+    src: url('../fonts/FuturaStd-Medium/FuturaStd-Medium.eot');
+	src: url('../fonts/FuturaStd-Medium/FuturaStd-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaStd-Medium/FuturaStd-Medium.woff') format('woff'),
+         url('../fonts/FuturaStd-Medium/FuturaStd-Medium.ttf') format('truetype'),
+         url('../fonts/FuturaStd-Medium/FuturaStd-Medium.svg#MaWebFont') format('svg');
+         font-weight: normal;
+         font-style: normal;
+}
+@font-face {
+	font-family: 'FuturaStdBold';
+    src: url('../fonts/FuturaStd-Bold/FuturaStd-Bold.eot');
+	src: url('../fonts/FuturaStd-Bold/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/FuturaStd-Bold/FuturaStd-Bold.woff') format('woff'),
+         url('../fonts/FuturaStd-Bold/FuturaStd-Bold.ttf') format('truetype'),
+         url('../fonts/FuturaStd-Bold/FuturaStd-Bold.svg#MaWebFont') format('svg');
+         font-weight: normal;
+         font-style: normal;
+}
+
+a:link, a:visited { text-decoration: none; }
+a:hover, a:focus { text-decoration: none; }
+a:active { text-decoration: none; }
+
+h1 { line-height: 1.2em; }
+h2 { font-size: 55px; margin: 0 0 38px 0; padding: 50px 0 0 0; font-family: FuturaStdBold, sans-serif; line-height: 1.4em; }
+h3 { font-size: 30px; line-height: 1.5em; }
+
+hr.hrTitle { border-color: #fff !important; opacity: 0.1; max-width: 120px; }
+hr.hrEnd   { margin-top: 70px;  }
+
+/********************* RWD ***********************/
+
+* { box-sizing: border-box; }
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.bloc1 img { max-width: inherit; }
+
+/* font size par defaut du body : 16px (= 1em) */
+body {
+    position: relative;
+    font-size: 21px;
+    line-height: 1.6em;
+    font-family: FuturaStd, sans-serif;
+    font-weight: normal;
+}
+
+/************ RWD force la hauteur a 100% **************/
+
+html, body, header, .slider-matrix { height: 100%; }
+.slider-matrix .wrapper { height: 100%; }
+
+/****************** CONTENEUR *******************/
+
+.wrapper {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+.column-2 { display: inline-block; width: 48%; vertical-align: top; }
+
+/* Résolution du probleme du footer en fixed, tous dois passer par dessus : */
+/*header, .bloc2, .mapContener, .pageReference, .blocMap { position: relative; z-index: 1; }*/
+
+
+/********************* SLIDER *********************/
+
+header #component { position: absolute; top: 0; left: 0; }
+header .slider-matrix {
+    position: absolute;
+	width: 100%;
+    background: url(img/grille-ok.png) center 0 repeat fixed;
+}
+
+/* cache les boutons de controlle du slider */
+#component nav { display: none; }
+
+
+/* RWD force la hauteur a 100% */
+.itemwrap li div { height: 100%; width: 100%; }
+
+/* appelle des images */
+.itemwrap li div.slide1 {
+    background: url(img/slide1.jpg) center center no-repeat fixed;
+        -webkit-background-size: cover;
+                background-size: cover;
+}
+.itemwrap li div.slide2 {
+    background: url(img/slide2.jpg) center center no-repeat fixed;
+        -webkit-background-size: cover;
+                background-size: cover;
+}
+.itemwrap li div.slide3 {
+    background: url(img/slide3.jpg) center center no-repeat fixed;
+        -webkit-background-size: cover;
+                background-size: cover;
+}
+.itemwrap li div.slide4 {
+    background: url(img/slide4.jpg) center center no-repeat fixed;
+        -webkit-background-size: cover;
+                background-size: cover;
+}
+
+/* HEADELINE */
+header .slider-matrix .headline {
+    position: absolute;
+    bottom: 43%;
+
+    left: 50%;
+    margin-left: -320px;
+}
+header .slider-matrix .headline h1 .cd-words-wrapper { width: 0 !important; } /* fixed bug */
+
+@media screen and (max-width: 830px) {
+    header .slider-matrix .headline h1 { font-size: 3.8em; }
+    header .slider-matrix .headline    { margin-left: -230px; }
+}
+@media screen and (max-width: 650px) {
+    header .slider-matrix .headline h1 { font-size: 3em; }
+    header .slider-matrix .headline    { margin-left: -175px; }
+}
+@media screen and (max-width: 460px) {
+    header .slider-matrix .headline h1 { font-size: 2.2em; }
+    header .slider-matrix .headline    { margin-left: -135px; }
+}
+@media screen and (max-width: 320px) {
+    header .slider-matrix .headline h1 { font-size: 1.8em; }
+    header .slider-matrix .headline    { margin-left: -116px; }
+}
+
+/* SCROLL 1 */
+header .slider-matrix .scroll {
+    position: absolute;
+    bottom: 3%;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+}
+
+/* SCROLL 2 */
+.mapContener .scroll {
+    text-align: center;
+    padding-top: 140px;
+}
+
+
+/********************* NAV TOP *********************/
+.navtop          { background-color: #e95b29; overflow: hidden; }
+.navtop .wrapper { overflow: hidden; }
+.navtop ul       { float: right; margin: 2px 0;}
+.navtop ul li    { display: inline-block; }
+.navtop ul li span  {  color: white; font-size: 12px; }
+.navtop ul li a:link, .navtop ul li a:visited {
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    padding: 10px 15px;
+    transition: 0.5s;
+}
+
+
+.navtop ul li a:hover, .navtop ul li a:focus { color: #12181c; }
+.navtop ul li a:active { color: #FF4F13; }
+
+
+/********************* NAV MAIN *********************/
+.navmain {
+    background-color: #12181c;
+    overflow: hidden;
+    -webkit-transition-property: background-color;
+            transition-property: background-color;
+    -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+}
+
+.navmain .wrapper { overflow: hidden; }
+
+/* LOGO*/
+.navmain .logo { float: left; margin: 0;}
+.navmain .logo img { margin: 8px 0 0 8px;}
+
+/* NAV */
+.navmain ul { float: right; margin: 21px 0;}
+/* le reste est dans nav.css */
+
+
+
+/* pour que les nav passe dessus le header : */
+.navtop, .navmain { position: relative; z-index: 1000; }
+
+
+/*  STYLISER LA STICKY NAV (FIXE LA NAV) */
+/* addClass */
+.fixeNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(18, 24, 28, 0.9);
+}
+
+/* NAV INVISIBLE compense la sortis du flux de la nav = */
+.addDiv { height: 71px; width: 100%; }
+
+
+
+/********************* SECTIONS 1 **********************/
+.bloc1 {
+    position: relative;
+    z-index: 1;
+    background: url(../img_iso/iso_bg-mono.jpg) center 0 no-repeat;
+    background-color: #44555f;
+    overflow: hidden;
+}
+
+.bloc1 .bg-color {
+    position: relative;
+    z-index: 10;
+    background: url(../img_iso/iso_bg.jpg) center 0 no-repeat;
+    height: 847px;
+    overflow: hidden;
+}
+
+
+/* le reste est dans animation_iso.css */
+
+/********************* SECTIONS 2 **********************/
+.bloc2          { background-color: #222A34;  overflow: hidden; }
+.bloc2 .wrapper { text-align: center; color: white; }
+.bloc2 h1       { font-family: FuturaStdBold, sans-serif; font-size: 4em; line-height: 1.2em; opacity: 0.1; }
+
+.steps1, .steps2, .steps3 {
+    display: inline-block;
+    width: 30%;
+    height: 450px;
+    vertical-align: top;
+    border: 5px solid white;
+    margin: 0 15px 20px 0;
+    background-color: #222A34;
+
+    font-size: 18px;
+    line-height: 1.7em;
+
+    position: relative; /* AS */
+    opacity: 0; /* AS */
+}
+
+@media screen and (max-width: 1010px) {
+    .steps1, .steps2, .steps3 { height: 510px; }
+}
+@media screen and (max-width: 890px) {
+    .steps1, .steps2, .steps3 { height: 550px; }
+}
+@media screen and (max-width: 820px) {
+    .steps1, .steps2, .steps3 { height: 570px; }
+}
+
+
+.steps3 { margin-right: 0; }
+
+.steps1 { left: 31.5%; z-index: 1; }
+.steps2 { bottom: -40px; z-index: 10; }
+.steps3 { right: 31.5%; z-index: 1; }
+
+/* STYLES */
+
+.bloc2 h2  { padding: 50px 0 0 0; }
+.bloc2 h4  { font-size: 1.8em; margin: 25px 0 0 0; color: #e95b29; }
+.bloc2 p   { padding: 8px 15px; }
+.bloc2 li  { text-align: left; }
+.bloc2 hr  { border: 1px solid #17252D; }
+
+.subtitle { color: #AEC0CB; font-size: 26px; line-height: 42px; }
+
+
+/********************* FOOTER **********************/
+.marge_pour_footer {
+    position: relative;
+    z-index: -2;
+    width: 100%;
+    height: 168px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    background-color: #12181c;
+    color: white;
+    text-align: center;
+    padding: 30px 0; }
+
+footer a:link, footer a:visited { color: white; transition: 0.5s; -webkit-transition: 0.5s; margin: 0 10px 0 10px; }
+footer a:hover, footer a:focus { color: #FF4F13; }
+footer a:active { color: white; }
+
+.nav_footer     { font-size: 16px; }
+.nav_footer_sub { font-size: 12px; margin-top: 5px;  }
+
+footer .copyright p   { margin: 10px 0 0 0; font-size: 12px; }
+footer .copyright p a { margin: 0; }

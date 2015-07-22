@@ -1,0 +1,12 @@
+/* SI IE INFERIEUR A 10 */
+
+/* H1 HEADER */
+.headline { bottom: 30% !important; margin-left: -200px !important; }
+.headline .cd-headline { display: none; }
+.headline h1 { font-size: 3.5em; line-height: 75px; }
+
+/* ISO HOVER */
+a.cursorTarget { display: inline-block; background-color: #e95b29; }
+
+/* SLIDER */
+header .slider-matrix { z-index: 1000; }

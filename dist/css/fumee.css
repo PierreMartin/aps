@@ -1,0 +1,183 @@
+/** ANIMATION FUMER **/
+.contener-fume1 { 
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    margin-left: -566px;
+    z-index: 200;
+}
+
+.contener-fume2 { 
+    position: absolute;
+    top: 302px;
+    left: 50%;
+    margin-left: -395px;
+    z-index: 200;
+}
+
+.fume1, .fume2, .fume3, .fume4, .fume5 { 
+    position: absolute; 
+    background-color: white;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    margin: 100px;
+}
+
+.contener-fume1 .fume1 { 
+    -webkit-animation: fume1 4s linear infinite;
+            animation: fume1 4s linear infinite;
+}
+
+.contener-fume1 .fume2 { 
+    -webkit-animation: fume2 4s linear infinite;
+            animation: fume2 4s linear infinite;
+}
+
+.contener-fume1 .fume3 { 
+    -webkit-animation: fume3 4s linear infinite;
+            animation: fume3 4s linear infinite;
+}
+
+.contener-fume1 .fume4 { 
+    -webkit-animation: fume4 4s linear infinite;
+            animation: fume4 4s linear infinite;
+}
+
+.contener-fume1 .fume5 { 
+    -webkit-animation: fume5 4s linear infinite;
+            animation: fume5 4s linear infinite;
+}
+    
+
+
+
+
+.contener-fume2 .fume1 { 
+    -webkit-animation: fume1 4s linear infinite;
+            animation: fume1 4s linear infinite;
+    
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+
+.contener-fume2 .fume2 { 
+    -webkit-animation: fume2 4s linear infinite;
+            animation: fume2 4s linear infinite;
+    
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+
+.contener-fume2 .fume3 { 
+    -webkit-animation: fume3 4s linear infinite;
+            animation: fume3 4s linear infinite;
+    
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+
+.contener-fume2 .fume4 { 
+    -webkit-animation: fume4 4s linear infinite;
+            animation: fume4 4s linear infinite;
+    
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+
+.contener-fume2 .fume5 { 
+    -webkit-animation: fume5 4s linear infinite;
+            animation: fume5 4s linear infinite;
+    
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+    
+
+
+
+/****/
+@-webkit-keyframes fume1 {
+  from {-webkit-transform: translate(0px, 0px) scale(0);}
+  10% {-webkit-transform: translate(-10px, -10px) scale(1);}
+  55% {-webkit-transform: translate(-9px, -45px) scale(1);}
+  85% {-webkit-transform: translate(-5px, -80px) scale(1);}
+  to {-webkit-transform: translate(-5px, -90px) scale(0);}
+}
+@keyframes fume1 {
+  from {transform: translate(0px, 0px) scale(0);}
+  10% {transform: translate(-10px, -10px) scale(1);}
+  55% {transform: translate(-9px, -45px) scale(1);}
+  85% {transform: translate(-5px, -80px) scale(1);}
+  to {transform: translate(-5px, -90px) scale(0);}
+}
+
+/****/
+@-webkit-keyframes fume2 {
+  from {-webkit-transform: translate(0px, 0px) scale(0);}
+  10% {-webkit-transform: translate(-10px, -10px) scale(1);}
+  55% {-webkit-transform: translate(-20px, -50px) scale(1);}
+  85% {-webkit-transform: translate(-20px, -87px) scale(1);}
+  to {-webkit-transform: translate(-20px, -98px) scale(0);}
+}
+@keyframes fume2 {
+  from {transform: translate(0px, 0px) scale(0);}
+  10% {transform: translate(-10px, -10px) scale(1);}
+  55% {transform: translate(-20px, -50px) scale(1);}
+  85% {transform: translate(-20px, -87px) scale(1);}
+  to {transform: translate(-20px, -98px) scale(0);}
+}
+
+/****/
+@-webkit-keyframes fume3 {
+  from {-webkit-transform: translate(0px, 0px) scale(0);}
+  10% {-webkit-transform: translate(-10px, -10px) scale(1);}
+  55% {-webkit-transform: translate(-15px, -42px) scale(1);}
+  85% {-webkit-transform: translate(-22px, -72px) scale(1);}
+  to {-webkit-transform: translate(-2px, -79px) scale(0);}
+}
+@keyframes fume3 {
+  from {transform: translate(0px, 0px) scale(0);}
+  10% {transform: translate(-10px, -10px) scale(1);}
+  55% {transform: translate(-15px, -42px) scale(1);}
+  85% {transform: translate(-22px, -72px) scale(1);}
+  to {transform: translate(-2px, -79px) scale(0);}
+}
+
+/****/
+@-webkit-keyframes fume4 {
+  from {-webkit-transform: translate(0px, 0px) scale(0);}
+  10% {-webkit-transform: translate(-10px, -10px) scale(1);}
+  55% {-webkit-transform: translate(-34px, -38px) scale(1);}
+  85% {-webkit-transform: translate(-39px, -70px) scale(1);}
+  to {-webkit-transform: translate(-40px, -80px) scale(0);}
+}
+
+@keyframes fume4 {
+  from {transform: translate(0px, 0px) scale(0);}
+  10% {transform: translate(-10px, -10px) scale(1);}
+  55% {transform: translate(-34px, -38px) scale(1);}
+  85% {transform: translate(-39px, -70px) scale(1);}
+  to {transform: translate(-40px, -80px) scale(0);}
+}
+
+/****/
+@-webkit-keyframes fume5 {
+  from {-webkit-transform: translate(0px, 0px) scale(0);}
+  10% {-webkit-transform: translate(-10px, -10px) scale(1);}
+  55% {-webkit-transform: translate(-5px, -36px) scale(1);}
+  85% {-webkit-transform: translate(5px, -65px) scale(1);}
+  to {-webkit-transform: translate(5px, -75px) scale(0);}
+}
+@keyframes fume5 {
+  from {transform: translate(0px, 0px) scale(0);}
+  10% {transform: translate(-10px, -10px) scale(1);}
+  55% {transform: translate(-5px, -36px) scale(1);}
+  85% {transform: translate(5px, -65px) scale(1);}
+  to {transform: translate(5px, -75px) scale(0);}
+}
+
+
+
+
+

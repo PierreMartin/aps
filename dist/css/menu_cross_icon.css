@@ -1,0 +1,86 @@
+/* GESTION DE L'ANIMATION DE L'ICON POUR AFFICHER LE MENU MOBILE (VISIBLE UNIQUEMENT EN TABLETTE & SMARTPHONE) */
+
+
+/******** NAV CLOSE ********/
+
+/*
+.btnCloseNav {
+  left: 22px;
+  top: 26px;
+  width: 35px;
+  height: 24px;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+*/
+
+/* BOUTON OPEN / CLOSE */ 
+a.menu-icon {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+    width: 35px;
+    height: 24px;
+    z-index: 2000;
+}
+/* FIN BOUTON OPEN / CLOSE */ 
+
+.btnCloseNav span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-transition: margin .13s ease-out .23s,opacity .13s ease-out .23s,-webkit-transform .13s ease-out,background .14s linear;
+  -moz-transition: margin .13s ease-out .23s,opacity .13s ease-out .23s,-moz-transform .13s ease-out,background .14s linear;
+  -ms-transition: margin .13s ease-out .23s,opacity .13s ease-out .23s,-ms-transform .13s ease-out,background .14s linear;
+  transition: margin .13s ease-out .23s,opacity .13s ease-out .23s,transform .13s ease-out,background .14s linear;
+}
+
+.btnCloseNav .l1 { margin-top: -10px; }
+.btnCloseNav .l3 { margin-top: 10px; }
+
+.btnCloseNav a {
+  display: block;
+  position: absolute;
+  left: -11px;
+  top: -15px;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+}
+
+
+/******** NAV OPEN ********/
+
+.openNav .btnCloseNav .l1 {
+  margin-top: 0;
+  -webkit-transform: rotate3d(0, 0, 1, -45deg) scale(.95);
+  -ms-transform: rotate3d(0, 0, 1, -45deg) scale(.95);
+  -moz-transform: rotate3d(0, 0, 1, -45deg) scale(.95);
+  transform: rotate3d(0, 0, 1, -45deg) scale(.95);
+}
+.openNav .btnCloseNav .l2 { opacity: 0; }
+
+.openNav .btnCloseNav .l3 {
+  margin-top: 0;
+  -webkit-transform: rotate3d(0, 0, 1, 45deg) scale(.95);
+  -ms-transform: rotate3d(0, 0, 1, 45deg) scale(.95);
+  -moz-transform: rotate3d(0, 0, 1, 45deg) scale(.95);
+  transform: rotate3d(0, 0, 1, 45deg) scale(.95);
+}
+
+.openNav .btnCloseNav span {
+  -webkit-transition: margin .16s ease-out,opacity .16s ease-out,-webkit-transform .16s cubic-bezier(.175, .885, .485, 1.19) .26s,background .14s linear;
+  -moz-transition: margin .16s ease-out,opacity .16s ease-out,-moz-transform .16s cubic-bezier(.175, .885, .485, 1.19) .26s,background .14s linear;
+  -ms-transition: margin .16s ease-out,opacity .16s ease-out,-ms-transform .16s cubic-bezier(.175, .885, .485, 1.19) .26s,background .14s linear;
+  transition: margin .16s ease-out,opacity .16s ease-out,transform .16s cubic-bezier(.175, .885, .485, 1.19) .26s,background .14s linear;
+}

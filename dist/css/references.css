@@ -1,0 +1,205 @@
+* { box-sizing: border-box; }
+
+
+/************ RWD force la hauteur a 100% **************/
+
+html, body, .page_reference { height: 100%; }
+/*.page_reference { max-height: 100%; overflow: hidden;}*/
+
+/************ STYLES **************/
+
+/* MAP */
+.mapContener {
+    background-color: #1F2125;
+    color: white;
+    text-align: center;
+}
+.mapContener a      { display: block; background: url(img/map_mezzo-tinto_bg.jpg) repeat; }
+.mapContener a .map { height: 190px;  background: url(img/map_mezzo-tinto_2.jpg) center 0 no-repeat; }
+
+.mapContener h2 { border-top: 5px solid white; }
+
+.pageReference {
+    width: 100%;
+    min-width: 100%;
+    
+    height: 70%;
+    min-height: 70%;
+    
+    background-color: #1F2125;
+    overflow: hidden;
+}
+
+.mapContener hr  { border: 1px solid #15181A ; margin-bottom: 45px; }
+
+
+/***** TITLE *****/
+.titreRefContener { overflow: hidden; }
+.titreRefContener .titrePageRef { margin: -42px 0 10px 0; }
+
+.titreRefContener .titre-left  { float: left; width: 49%; text-align: center; color: white; }
+.titreRefContener .titre-right { float: right; width: 49%; text-align: center; color: white; }
+
+.titrePageRef { 
+    -webkit-transition: all 0.7s ease; 
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;  
+}
+/* addClass */
+.titreAnim { margin: 20px 0 15px 0!important; }
+
+
+/***** LINES *****/
+.titreRefContener .line { 
+    height: 1px; 
+    background-color: white; 
+    width: 0%; 
+    margin: 5px auto 0 auto; 
+    
+    -webkit-transition: width 1.9s 0.9s ease; 
+    -moz-transition: width 1.9s 0.9s ease;
+    -o-transition: width 1.9s 0.9s ease;
+    transition: width 1.9s 0.9s ease; 
+}
+
+/* addClass */
+.lineFull { width: 90% !important; }
+
+
+/* UL */
+.pageReference ul {  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.pageReference ul.left { float: left; width: 49.8%; }
+.pageReference ul.right { float: right; width: 49.8%; }
+.pageReference ul.right li { float: right; }
+
+
+/*******  GESTION DES VIGNETTES *******/
+.pageReference ul li {
+    position: relative;
+    display: inline-block;
+    
+    padding: 0;
+    margin: 1px;
+    
+    border: 0px white solid;
+
+    height: 19%;
+    width: 24%;
+    
+    vertical-align: top;
+    
+    -webkit-transition: border 0.55s ease;
+    -moz-transition: border 0.55s ease 0s;
+    -o-transition: border 0.55s ease 0s;
+    transition: border 0.55s ease 0s;
+    
+    overflow: hidden;
+}
+
+.pageReference ul li .contentLi {  
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    
+    -webkit-transition: all 0.55s ease,width 0s linear,height 0s linear;
+    -webkit-transition-delay: 0s,0s,0s;
+    -moz-transition: all 0.55s ease 0s,width 0s linear 0s,height 0s linear 0s;
+    -o-transition: all 0.55s ease 0s,width 0s linear 0s,height 0s linear 0s;
+    transition: all 0.55s ease 0s,width 0s linear 0s,height 0s linear 0s;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    overflow: hidden;
+}
+
+/* CHAREMENT DES IMAGES */
+.pageReference ul li .logo1 {  background: url(imgLogos-gauche/airgroup.jpg) center center no-repeat; }
+.pageReference ul li .logo2 {  background: url(imgLogos-gauche/citel.jpg) center center no-repeat; }
+.pageReference ul li .logo3 {  background: url(imgLogos-gauche/enraf.jpg) center center no-repeat; }
+.pageReference ul li .logo4 {  background: url(imgLogos-gauche/is.jpg) center center no-repeat; }
+.pageReference ul li .logo5 {  background: url(imgLogos-gauche/kanon.jpg) center center no-repeat; }
+.pageReference ul li .logo6 {  background: url(imgLogos-gauche/lelas.jpg) center center no-repeat; }
+.pageReference ul li .logo7 {  background: url(imgLogos-gauche/naftis.jpg) center center no-repeat; }
+.pageReference ul li .logo8 {  background: url(imgLogos-gauche/obsta.jpg) center center no-repeat; }
+.pageReference ul li .logo9 {  background: url(imgLogos-gauche/safir.jpg) center center no-repeat; }
+.pageReference ul li .logo10 { background: url(imgLogos-gauche/sihi.jpg) center center no-repeat; }
+.pageReference ul li .logo11 { background: url(imgLogos-gauche/trelleborg.jpg) center center no-repeat; }
+.pageReference ul li .logo12 { background: url(imgLogos-gauche/logoAnim-suppliers.gif) center center no-repeat; }
+.pageReference ul li .logo13 { background: url(imgLogos-gauche/mep.jpg) center center no-repeat; }
+.pageReference ul li .logo14 { background: url(imgLogos-gauche/pai.jpg) center center no-repeat; }
+.pageReference ul li .logo15 { background: url(imgLogos-gauche/touteLaSoudure.jpg) center center no-repeat; }
+.pageReference ul li .logo16 { background: url(imgLogos-gauche/finsecur.jpg) center center no-repeat; }
+
+.pageReference ul li .logoD1 {  background: url(imgLogos-droite/acergy.jpg) center center no-repeat; }
+.pageReference ul li .logoD2 {  background: url(imgLogos-droite/addax.jpg) center center no-repeat; }
+.pageReference ul li .logoD3 {  background: url(imgLogos-droite/aiteo.jpg) center center no-repeat; }
+.pageReference ul li .logoD4 {  background: url(imgLogos-droite/cakasa.jpg) center center no-repeat; }
+.pageReference ul li .logoD5 {  background: url(imgLogos-droite/chevron.jpg) center center no-repeat; }
+.pageReference ul li .logoD6 {  background: url(imgLogos-droite/cisan.jpg) center center no-repeat; }
+.pageReference ul li .logoD7 {  background: url(imgLogos-droite/coniol.jpg) center center no-repeat; }
+.pageReference ul li .logoD8 {  background: url(imgLogos-droite/krg.jpg) center center no-repeat; }
+.pageReference ul li .logoD9 {  background: url(imgLogos-droite/lafarge.jpg) center center no-repeat; }
+.pageReference ul li .logoD10 { background: url(imgLogos-droite/nnpc.jpg) center center no-repeat; }
+.pageReference ul li .logoD11 { background: url(imgLogos-droite/oando.jpg) center center no-repeat; }
+.pageReference ul li .logoD12 { background: url(imgLogos-droite/logoAnim-references.gif) center center no-repeat; }
+.pageReference ul li .logoD13 { background: url(imgLogos-droite/tld.jpg) center center no-repeat; }
+.pageReference ul li .logoD14 { background: url(imgLogos-droite/total.jpg) center center no-repeat; }
+.pageReference ul li .logoD15 { background: url(imgLogos-droite/shell.jpg) center center no-repeat; }
+.pageReference ul li .logoD16 { background: url(imgLogos-droite/tsl.jpg) center center no-repeat; }
+
+
+/******* GESTION DU TEXTE *******/
+.pageReference ul li p { 
+    position: absolute;
+    top: -10px;
+    left: 0%;
+    right: 0%;
+}
+
+.pageReference ul li p .txt { 
+    -webkit-transition: all 0.25s ease-in-out;
+    -webkit-transition-delay: 0s;
+    -moz-transition: all 0.25s ease-in-out 0s;
+    -o-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+
+    color: black;
+    text-align: center;
+    font-size: 12px;
+
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    
+    display: block;
+}
+
+
+/******* RemoveClass en hover *******/
+.grayZoom {
+    -webkit-transform: translateX(0%) translateY(-2.5%) scale(1.2);
+    -moz-transform: translateX(0%) translateY(-2.5%) scale(1.2);
+    -ms-transform: translateX(0%) translateY(-2.5%) scale(1.2);
+    -o-transform: translateX(0%) translateY(-2.5%) scale(1.2);
+    transform: translateX(0%) translateY(-2.5%) scale(1.2);
+}
+
+/******* addClass en hover *******/
+.opacityLogoHover { opacity: 1 !important; border: #e95b29 3px solid !important; }
+.opacityLogoOut { opacity: 0.2 !important; }
+
+.opacityText { opacity: 1 !important; }
+
+
+
+

@@ -1,0 +1,411 @@
+/** STYLES **/
+
+
+/*** Les images sont positionnées en CENTER, puis positionné avec des margins ***/
+/**  IMG = POSITION ABSOLUTE EN LEFT:50% **/
+
+
+/*
+.bloc1 {
+    position: relative;
+    background: url(img/iso_bg.jpg) center 0 no-repeat;
+    height: 1167px;
+}
+*/
+
+.bloc1 .wrapper { height: 100%; }
+
+/***************** BUILDING *********************/
+.building {
+    position: absolute;
+    z-index: 20;
+    top: -155px;
+    left: 50%;
+    margin-left: 196px;
+    height: 382px; width: 353px;
+}
+
+/***************** Bureaux *********************/
+.bureaux {
+    position: absolute;
+    z-index: 105;
+    top: 181px;
+    left: 50%;
+    margin-left: 62px;
+    width: 217px; height: 214px;
+}
+/***************** ANTENNE *********************/
+.antenne {
+    position: absolute;
+    z-index: 35;
+    top: 590px;
+    left: 50%;
+    margin-left: -230px;
+    width: 172px; height: 252px;
+}
+/***************** ANTENNE *********************/
+.antenne_clignotte {
+    position: absolute;
+    z-index: 34;
+    top: 585px;
+    left: 50%;
+    margin-left: -180px;
+    width: 12px; height: 12px;
+}
+/***************** FACTO CHEMINERS *********************/
+.usine1 {
+    position: absolute;
+    z-index: 30;
+    top: 320px;
+    left: 50%;
+    margin-left: -655px;
+    width: 434px; height: 472px;
+}
+/***************** HP *********************/
+.hp {
+    position: absolute;
+    z-index: 40;
+    top: 677px;
+    left: 50%;
+    margin-left: -457px;
+    width: 75px; height: 83px;
+}
+/***************** HP CLIGNOTTE *********************/
+.hp_clignotte {
+    position: absolute;
+    z-index: 45;
+    top: 735px;
+    left: 50%;
+    margin-left: -438px;
+    width: 37px; height: 25px;
+}
+
+/***************** CUVES PETROLE *********************/
+.cuve {
+    position: absolute;
+    z-index: 20;
+    top: 335px;
+    left: 50%;
+    margin-left: -348px;
+    width: 401px; height: 278px;
+}
+
+/***************** PHONE *********************/
+.phone {
+    position: absolute;
+    z-index: 30;
+    top: 527px;
+    left: 50%;
+    margin-left: -58px;
+    width: 28px; height: 48px;
+}
+
+/***************** BONHOMME *********************/
+.bonhomme {
+    position: absolute;
+    z-index: 110;
+    top: 387px;
+    left: 50%;
+    margin-left: 62px;
+    width: 41px; height: 77px;
+}
+
+/***************** GAS PETROLE *********************/
+.gas {
+    position: absolute;
+    z-index: 107;
+    top: 479px;
+    left: 50%;
+    margin-left: 82px;
+    width: 299px; height: 289px;
+}
+
+/***************** STATION *********************/
+.station {
+    position: absolute;
+    z-index: 110;
+    top: 265px;
+    left: 50%;
+    margin-left: 239px;
+    width: 241px; height: 223px;
+}
+
+/***************** BATEAU *********************/
+.bateau {
+    position: absolute;
+    z-index: 20;
+    top: 495px;
+    left: 50%;
+    margin-left: -1129px;
+
+    -webkit-animation: bateau 18s infinite ease-in-out;
+            animation: bateau 18s infinite ease-in-out;
+
+    width: 258px; height: 174px;
+}
+
+
+@-webkit-keyframes bateau {
+  from {-webkit-transform: translate(0px, 0px);}
+  40% {-webkit-transform: translate(730px,-380px);}
+  60% {-webkit-transform: translate(730px,-380px);}
+  to {-webkit-transform: translate(1200px,-860px);}
+}
+@keyframes bateau {
+  from {transform: translate(0px, 0px);}
+  40% {transform: translate(730px,-380px);}
+  60% {transform: translate(730px,-380px);}
+  to {transform: translate(1200px,-860px);}
+}
+
+/*
+.bateau:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+    z-index: 200;
+}
+*/
+
+/***************** BORNE 1 *********************/
+.borne1, .borne2, .borne3 { width: 19px; height: 33px; }
+
+.borne1 {
+    position: absolute;
+    z-index: 120;
+    top: 245px;
+    left: 50%;
+    margin-left: 13px;
+}
+
+.borne2 {
+    position: absolute;
+    z-index: 120;
+    top: 665px;
+    left: 50%;
+    margin-left: 13px;
+}
+
+.borne3 {
+    position: absolute;
+    z-index: 120;
+    top: 432px;
+    left: 50%;
+    margin-left: 120px;
+}
+
+/***************** GRUES *********************/
+.grue1 {
+    position: absolute;
+    z-index: 30;
+    top: 146px;
+    left: 50%;
+    margin-left: -277px;
+    width: 139px; height: 114px;
+}
+/***************** LANCE *********************/
+.lance {
+    position: absolute;
+    z-index: 30;
+    top: 290px;
+    left: 50%;
+    margin-left: -283px;
+    width: 58px; height: 46px;
+}
+
+/***************** POMPE *********************/
+.pompe {
+    position: absolute;
+    z-index: 15;
+    top: 276px;
+    left: 50%;
+    margin-left: -242px;
+    width: 304px; height: 273px;
+}
+
+/***************** POMPIER *********************/
+.pompier {
+    position: absolute;
+    z-index: 20;
+    top: 6px;
+    left: 50%;
+    margin-left: 184px;
+
+    -webkit-animation: pompier 15s infinite linear;
+	animation: pompier 15s infinite linear;
+
+    width: 144px; height: 140px;
+}
+
+@-webkit-keyframes pompier {
+  from {-webkit-transform: translate(0px, 0px);}
+  to {-webkit-transform: translate(-1170px, 676px);}
+}
+
+@keyframes pompier {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(-1170px, 676px);}
+}
+
+/***************** CAMION 1 *********************/
+.camion1 {
+    position: absolute;
+    z-index: 31;
+    top: 338px;
+    left: 50%;
+    margin-left: 272px;
+
+    -webkit-animation: camion1 12s infinite ease-in-out;
+            animation: camion1 12s infinite ease-in-out;
+
+    -webkit-animation-delay: 6s;
+            animation-delay: 6s;
+
+    width: 118px; height: 93px;
+}
+
+@-webkit-keyframes camion1 {
+  from {-webkit-transform: translate(0px, 0px);}
+  40% {-webkit-transform: translate(-380px, 220px);}
+  60% {-webkit-transform: translate(-380px, 220px);}
+  to {-webkit-transform: translate(-900px, 520px);}
+}
+
+@keyframes camion1 {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(-900px, 520px);}
+}
+
+/***************** CAMION 2 *********************/
+.camion2 {
+    position: absolute;
+    z-index: 31;
+    top: 360px;
+    left: 50%;
+    margin-left: 317px;
+
+    -webkit-animation: camion2 12s linear infinite;
+            animation: camion2 12s linear infinite;
+
+    -webkit-animation-delay: 7s;
+            animation-delay: 7s;
+
+    width: 118px; height: 93px;
+}
+
+@-webkit-keyframes camion2 {
+  from {-webkit-transform: translate(0px, 0px);}
+  to {-webkit-transform: translate(-1170px, 676px);}
+}
+
+@keyframes camion2 {
+  from {transform: translate(0px, 0px);}
+  to {transform: translate(-1170px, 676px);}
+}
+
+/* addClass jQuery */
+/*
+.stopAnim {
+    -webkit-animation-play-state: paused !important;
+            animation-play-state: paused !important;
+    z-index: 100 !important;
+}
+*/
+
+/***************** BARRIERE gauche *********************/
+
+.barriere_g {
+    position: absolute;
+    z-index: 107;
+    top: 418px;
+    left: 50%;
+    margin-left: 189px;
+    width: 50px; height: 35px;
+
+    -webkit-animation: barriere_g 12s linear infinite;
+            animation: barriere_g 12s linear infinite;
+
+    -webkit-transform-origin: 0px 5px;
+            transform-origin: 0px 5px;
+
+}
+
+@-webkit-keyframes barriere_g {
+    /* en bas */
+  from {-webkit-transform: rotate(0deg);}
+  55% {-webkit-transform: rotate(0deg);}
+    /* en haut */
+  65% {-webkit-transform: rotate(-120deg);}
+  90% {-webkit-transform: rotate(-120deg);}
+    /* en bas */
+  to {-webkit-transform: rotate(0deg);}
+}
+
+@keyframes barriere_g {
+    /* en bas */
+  from {transform: rotate(0deg);}
+  55% {transform: rotate(0deg);}
+    /* en haut */
+  65% {transform: rotate(-120deg);}
+  90% {transform: rotate(-120deg);}
+    /* en bas */
+  to {transform: rotate(0deg);}
+}
+
+/***************** BARRIERE droite *********************/
+
+.barriere_d {
+    position: absolute;
+    z-index: 107;
+    top: 444px;
+    left: 50%;
+    margin-left: 237px;
+    width: 50px; height: 35px;
+
+    -webkit-animation: barriere_d 12s linear infinite;
+            animation: barriere_d 12s linear infinite;
+
+    -webkit-transform-origin: 46px 30px;
+            transform-origin: 46px 30px;
+
+}
+
+@-webkit-keyframes barriere_d {
+    /* en bas */
+  from {-webkit-transform: rotate(0deg);}
+  55% {-webkit-transform: rotate(0deg);}
+    /* en haut */
+  65% {-webkit-transform: rotate(70deg);}
+  90% {-webkit-transform: rotate(70deg);}
+    /* en bas */
+  to {-webkit-transform: rotate(0deg);}
+}
+
+@keyframes barriere_d {
+    /* en bas */
+  from {transform: rotate(0deg);}
+  55% {transform: rotate(0deg);}
+    /* en haut */
+  65% {transform: rotate(70deg);}
+  90% {transform: rotate(70deg);}
+    /* en bas */
+  to {transform: rotate(0deg);}
+}
+
+/***************** BARRIERE BLOC *********************/
+.barriereBloc1 {
+    position: absolute;
+    z-index: 10;
+    top: 399px;
+    left: 50%;
+    margin-left: 166px;
+    width: 32px; height: 54px;
+}
+
+.barriereBloc2 {
+    position: absolute;
+    z-index: 30;
+    top: 463px;
+    left: 50%;
+    margin-left: 278px;
+    width: 32px; height: 54px;
+}

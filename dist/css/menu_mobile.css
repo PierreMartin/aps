@@ -1,0 +1,147 @@
+/* AFFICHE LE MENU MOBILE */
+
+body {
+  left: 0;
+    
+  -webkit-transition: left .3s;
+          transition: left .3s;
+}
+
+body.open { left: 250px; overflow-x: hidden; background-color: #444; }
+
+ul.side-menu, ul.side-menu h2, ul.side-menu li { margin: 0; padding: 0; }
+
+ul.side-menu h2 a, ul.side-menu h2 a:link, ul.side-menu h2 a:visited { color: #fff; }
+ul.side-menu h2 a:hover, ul.side-menu h2 a:focus { color: #e95b29; }
+ul.side-menu h2 a:active { color: #e95b29; }
+
+ul.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #444;
+  z-index: -1;
+
+  -webkit-transition: left .3s;
+  transition: left .3s;
+    
+  margin-top: 70px;
+}
+
+ul.side-menu.open {
+    left: 0;
+}
+
+ul.side-menu li {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #555;
+
+    -webkit-transition: top .3s;
+    transition: top .3s;
+}
+
+/* trouver cette classe */ 
+ul.side-menu li.row {
+    border: 0;
+    position: static;
+    top: 0;
+    height: 0;
+    -webkit-transition: none;
+    transition: none;
+}
+
+/* trouver cette classe */ 
+ul.side-menu li.metro {
+    position: absolute;
+    padding: 0;
+    height: 125px;
+    text-align: center;
+    background-color: #CCC;
+}
+
+/* trouver cette classe */ 
+ul.side-menu li.metro.half { width: 50%; }
+ul.side-menu li.metro.full { width: 100%; }
+
+ul.side-menu h2.title {
+    text-align: left;
+    padding: 0 0 0 25px;
+    position: relative;
+    top: -60px;
+    font-size: 23px;
+    line-height: 60px;
+    height: 60px;
+    background-color: #555;
+    color: white;
+
+    -webkit-transition: top .3s;
+    transition: top .3s;
+}
+
+ul.side-menu li a {
+    display: block;
+    font-size: 15px;
+    padding: 0 0 0 55px;
+    margin: 0px;
+    height: inherit;
+    line-height: inherit;
+    color: white;
+}
+
+ul.side-menu li a:hover {
+    background-color: #e95b29;
+    color: #444;
+}
+
+/*
+ul.side-menu li.metro a {
+    margin: 42px 0;
+    height: 40px;
+    font-size: 40px;
+}
+*/
+
+.mobile_company {
+    background: url("img/icons_mobile_company.png") left center no-repeat;
+    background-position: 10px 8px;
+}
+.mobile_mission {
+    background: url("img/icons_mobile_mission.png") left center no-repeat;
+    background-position: 10px 8px;
+}
+.mobile_solution {
+    background: url("img/icons_mobile_solution.png") left center no-repeat;
+    background-position: 10px 8px;
+}
+.mobile_reference {
+    background: url("img/icons_mobile_reference.png") left center no-repeat;
+    background-position: 10px 8px;
+}
+.mobile_contact {
+    background: url("img/icons_mobile_contact.png") left center no-repeat;
+    background-position: 10px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

@@ -1,0 +1,185 @@
+/* ---------------------- TABLETTES + SMARTPHONES ----------------------*/
+@media screen and (max-width: 780px) {
+    .wrapper { padding: 0px 20px; }
+
+    /* MENU NAV */
+    .navmain       { height: 70px; }
+    .navmain ul    { display: none; }
+    .navmain .logo { float: none; text-align: center; }
+
+    .navtop ul { float: none; text-align: center; padding: 0; }
+
+    .box_menu { display: none; }
+
+    .steps1, .steps2, .steps3 {
+        display: block;
+        width: 100%;
+        height: inherit;
+    }
+
+    /**************** INTRO LOGO ****************/
+    .contenerLoad {
+        margin-left: -126px;
+        width: 250px;
+    }
+
+
+    /********************* ISO *********************/
+    .contener_clouds, .contener-fume1, .contener-fume2 { display: none; }
+
+
+    /***************** BATEAU *********************/
+    @-webkit-keyframes bateau {
+      from {-webkit-transform: translate(0px, 0px);}
+      40% {-webkit-transform: translate(260px, -135px);}
+      60% {-webkit-transform: translate(260px, -135px);}
+      to {-webkit-transform: translate(428px, -307px);}
+    }
+    @keyframes bateau {
+      from {transform: translate(0px, 0px);}
+      40% {transform: translate(260px, -135px);}
+      60% {transform: translate(260px, -135px);}
+      to {transform: translate(428px, -307px);}
+    }
+
+    /***************** BARRIERE *********************/
+    .barriere_g {
+        -webkit-transform-origin: 0px 1.7px;
+                transform-origin: 0px 1.7px;
+    }
+    .barriere_d {
+        -webkit-transform-origin: 16px 10.7px;
+                transform-origin: 16px 10.7px;
+    }
+    /***************** CAMION 1 *********************/
+    @-webkit-keyframes camion1 {
+      from {-webkit-transform: translate(0px, 0px);}
+      40% {-webkit-transform: translate(-135px, 78.5px);}
+      60% {-webkit-transform: translate(-135px, 78.5px);}
+      to {-webkit-transform: translate(-321px, 185.7px);}
+    }
+    @keyframes camion1 {
+      from {transform: translate(0px, 0px);}
+      40% {transform: translate(-135px, 78.5px);}
+      60% {transform: translate(-135px, 78.5px);}
+      to {transform: translate(-321px, 185.7px);}
+    }
+
+    /***************** TOOLTIP *********************/
+    .tooltip-content {
+        width: 300px;
+        left: 50%;
+        bottom: 70%;
+        font-size: 8px;
+        line-height: 1.4;
+        margin: 0 0 20px -115px;
+    }
+    .tooltip-content::after { content: none}
+
+    .tooltip_content_pompier {  }
+    .tooltip_content_bureau  { margin: 0px 0 -112px -212px; }
+    .tooltip_content_pompe   { margin: 0 0 -9px -135px; }
+    .tooltip_content_antenne { margin: 0 0 122px -120px; }
+    .tooltip_content_borne1  { margin: 0 0 -24px -162px; }
+    .tooltip_content_borne2  { margin: 0 0 126px -162px; }
+    .tooltip_content_borne3  { margin: 0 0 43px -200px; }
+    .tooltip_content_cuve    { margin: 0 0 -4px -97px; }
+    .tooltip_content_phone   { margin: 0 0 79px -138px; }
+    .tooltip_content_bonhomme { margin: 0 0 -4px -183px; }
+    .tooltip_content_gas     { margin: 0 0 106px -233px; }
+    .tooltip_content_grue    { margin: 0 0 -56px -84px; }
+    .tooltip_content_lance   { margin: 0 0 -11px -60px; }
+    .tooltip_content_station { margin: 0 0 -46px -273px; }
+    .tooltip_content_usine1  { margin: 0 0 101px 4px; }
+    .tooltip_content_hp      { margin: 0 0 130px -3px; }
+
+
+    /* cursors */
+    .cursorTarget { height: 13px; width: 13px; }
+    @keyframes ripple {  }
+
+    /****************** REFERENCES ******************/
+    .pageReference { height: 300px; min-height: inherit; }
+    .pageReference ul li { width: 22.5%; height: 15%; }
+    .pageReference ul li .contentLi { background-size: 200%; }
+    .pageReference ul li .contentLi .txt { display: none; }
+
+    /*********************** FOOTER ******************/
+    /* annule l'effet parallax  */
+    footer { position: static; }
+    .marge_pour_footer { display: none; }
+
+    /* largeur 100%  */
+    footer .nav_footer a {
+        display: block;
+        width: 100%;
+        margin: 0;
+
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #555;
+    }
+    footer .nav_footer a:first-of-type { border-top: 1px solid #555; }
+    footer .nav_footer a:last-of-type  { margin-bottom: 40px; }
+    footer .nav_footer span { display: none; }
+
+    footer .nav_footer a:hover { background-color: #e95b29; color: #12181c; }
+
+    /*********************** PAGES AUTRES ******************/
+    .pages .wrapper { padding: 0 10px; }
+
+    /* PAGE SOLUTIONS */
+    .bloc2 h1 { font-size: 2.3em !important; }
+    h2        { font-size: 1.4em !important; }
+    h3        { font-size: 22px; }
+
+
+    /* PAGE MISSIONS */
+    .column_2_missions {
+        display: block;
+        width: 100%;
+        height: inherit !important;
+        margin-bottom: 20px;
+        padding-bottom: 60px !important;
+    }
+
+
+    /* PAGE CONTACT */
+    .blocMap .wrapper  { padding: 0px; }
+    .blocMap .column-2 { padding: 0 10px; }
+    .blocMap adress    { font-size: 15px; line-height: 0.5em; }
+    .blocMap adress a, .blocMap adress a:link, .blocMap adresse a:visited { font-size: 20px; line-height: 1em; margin-top: 10px; }
+
+
+}
+
+/* ---------------------- SMARTPHONE ----------------------*/
+@media screen and (max-width: 500px) {
+
+    /* PAGE CONTACT */
+    .blocMap h3        { font-size: 1em; }
+    .blocMap adress    { font-size: 12px; line-height: 0.5em; }
+    .blocMap .column-2 { padding: 0px; }
+    .blocMap .column-2:first-of-type { border-right: none; }
+    .blocMap adress a, .blocMap adress a:link, .blocMap adresse a:visited { font-size: 15px; line-height: 1em; margin-top: 10px; }
+
+    /* PAGE INDEX : REFERENCES */
+    .titreRefContener .titrePageRef { margin: -70px 0 10px 0; }
+
+    /* PAGE MISSIONS */
+    .column_2_missions h4 { font-size: 1em; }
+    .containerColumn .content-titre:before { border: 2px solid #e95b29; padding: 5px 12px 1px 12px; }
+
+    /* PAGES ALL : STYLES LISTE 1 */
+    ul.styleList1 li        { font-size: 0.6em; border-radius: 15px; }
+    ul.styleList1 li:before { padding: 10px 5px 10px 4px; vertical-align: middle; }
+
+
+}
+
+
+/* ---------------------- DESTOCK  ----------------------*/
+@media screen and (min-width: 781px) {
+    a.menu-icon { display: none; }
+    ul.side-menu { display: none; }
+}

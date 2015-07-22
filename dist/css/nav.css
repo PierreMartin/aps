@@ -1,0 +1,338 @@
+/* GESTION DES ANIMATIONS DES ICONS (EN SURVOLLE) DE LA NAV MAIN */
+
+@-webkit-keyframes fade {
+    0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}@keyframes fade {
+    0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+}#-x-dummy {
+    -x-dummy: 0;
+}
+@-webkit-keyframes bounce-in {
+    0% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+19% {
+    -webkit-transform: scale(1.14);
+    -ms-transform: scale(1.14);
+    transform: scale(1.14);
+}
+38% {
+    -webkit-transform: scale(.93);
+    -ms-transform: scale(.93);
+    transform: scale(.93);
+}
+62% {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+}@keyframes bounce-in {
+    0% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+19% {
+    -webkit-transform: scale(1.14);
+    -ms-transform: scale(1.14);
+    transform: scale(1.14);
+}
+38% {
+    -webkit-transform: scale(.93);
+    -ms-transform: scale(.93);
+    transform: scale(.93);
+}
+62% {
+    -webkit-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
+}
+100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+    
+}#-x-dummy {
+    -x-dummy: 0;
+}
+@-webkit-keyframes scale-in {
+    0% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+}@keyframes scale-in {
+    0% {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+}#-x-dummy {
+    -x-dummy: 0;
+}
+@-webkit-keyframes bg-scroll {
+    0% {
+    background-position: 0 0;
+}
+}@keyframes bg-scroll {
+    0% {
+    background-position: 0 0;
+}
+}#-x-dummy {
+    -x-dummy: 0;
+}
+@-webkit-keyframes rotate-from0 {
+    0% {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+}@keyframes rotate-from0 {
+    0% {
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+}#-x-dummy {
+    -x-dummy: 0;
+}
+@-webkit-keyframes bt-bounce-in {
+    0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+30% {
+    -webkit-transform: scale(1.18);
+    -ms-transform: scale(1.18);
+    transform: scale(1.18);
+}
+100% {
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+    -webkit-animation-timing-function: cubic-bezier(0.19,  1,  0.22,  1);
+    animation-timing-function: cubic-bezier(0.19,  1,  0.22,  1);
+}
+}@keyframes bt-bounce-in {
+    0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+30% {
+    -webkit-transform: scale(1.18);
+    -ms-transform: scale(1.18);
+    transform: scale(1.18);
+}
+100% {
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+    -webkit-animation-timing-function: cubic-bezier(0.19,  1,  0.22,  1);
+    animation-timing-function: cubic-bezier(0.19,  1,  0.22,  1);
+}
+}#-x-dummy {
+    -x-dummy: 0;
+}
+@-webkit-keyframes bt-decoration {
+    0% {
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+}
+4.76%,  19.05%,  38.1% {
+    -webkit-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+}
+28.57% {
+    -webkit-transform: rotate(12deg) scale(1.2);
+    -ms-transform: rotate(12deg) scale(1.2);
+    transform: rotate(12deg) scale(1.2);
+}
+9.52%,  47.61% {
+    -webkit-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    transform: rotate(12deg);
+}
+52.38% {
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+}
+100% {
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+}
+}@keyframes bt-decoration {
+    0% {
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+}
+4.76%,  19.05%,  38.1% {
+    -webkit-transform: rotate(-12deg);
+    -ms-transform: rotate(-12deg);
+    transform: rotate(-12deg);
+}
+28.57% {
+    -webkit-transform: rotate(12deg) scale(1.2);
+    -ms-transform: rotate(12deg) scale(1.2);
+    transform: rotate(12deg) scale(1.2);
+}
+9.52%,  47.61% {
+    -webkit-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
+    transform: rotate(12deg);
+}
+52.38% {
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+}
+100% {
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+}
+}#-x-dummy {
+    -x-dummy: 0;
+}
+
+
+
+.navmain ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 70px;
+}
+
+.navmain ul li {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+}
+
+/* nav ul li a */ 
+.nav-link {
+    text-transform: uppercase;
+    font-size: 0.72em;
+    color: #fff;
+
+    padding: 0 15px;
+    margin-top: 22px;
+    
+    display: table;
+    -webkit-transition: padding-top 0.2s,  color 0.2s;
+    transition: padding-top 0.2s,  color 0.2s;
+}
+
+/* nav ul li a */
+/* Positionement de l'icon dans le a */
+.nav-link::before {
+    content: "";
+    display: block;
+    position: absolute;
+    speak: none;
+    width: 30px;
+    height: 30px;
+    margin: -15px -15px;
+    left: 50%;
+    bottom: 50%;
+    opacity: 0;
+}
+
+.nav-link:hover {
+    color: #e95b29;
+    padding-top: 18px;
+}
+
+.nav-link:hover::before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform 0,  opacity 0.2s;
+    -webkit-transition: transform 0,  opacity 0.2s;
+    transition: -webkit-transform 0,  opacity 0.2s;
+    transition: transform 0,  opacity 0.2s;
+    -webkit-animation: bounce-in 0.4s;
+    animation: bounce-in 0.4s;
+    opacity: 1;
+}
+
+/***** APPELLE DES ICONS ****/
+/* nav ul li a */
+.company::before {
+    width: 39px;
+    height: 34px;
+    margin: -11px -17px;
+    background: url("img/icons_company.png") center center / 39px 34px no-repeat;
+    margin-bottom: -8px;
+}
+.missions::before {
+    width: 39px;
+    height: 34px;
+    margin: -12.5px -17px;
+    background: url("img/icons_mission.png") center center / 39px 34px no-repeat;
+    margin-bottom: -8px;
+}
+.solutions::before {
+    width: 39px;
+    height: 34px;
+    margin: -15px -20px;
+    background: url("img/icon_solution.png") center center / 39px 34px no-repeat;
+    margin-bottom: -8px;
+}
+.references::before {
+    width: 39px;
+    height: 34px;
+    margin: -10px -17px;
+    background: url("img/icons_reference.png") center center / 39px 34px no-repeat;
+    margin-bottom: -8px;
+}
+.contact::before {
+    width: 39px;
+    height: 34px;
+    margin: -10px -20px;
+    background: url("img/icon_contact.png") center center / 39px 34px no-repeat;
+    margin-bottom: -8px;
+}
+
+/* span */
+.navmain ul li span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+

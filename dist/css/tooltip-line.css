@@ -1,0 +1,201 @@
+/* GESTION DES POP UP LORS DU SURVOLE DES ELEMENTS DANS L'ISOMETRIE */
+
+
+/************ LES CURSEURS **********/
+.cursorTarget {
+    position: absolute;
+    z-index: 200;
+    height: 18px;
+    width: 18px;
+    border: 2px solid #fff;
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+}
+
+/* POSITIONS : */
+.cursorPompier { top: 73px; left: 50%; margin-left: 232px; z-index: 30; }
+.cursorPompier {
+    -webkit-animation: pompier 15s infinite linear;
+	animation: pompier 15s infinite linear;
+}
+/* addClass */
+.stopAnimPompier {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+/* addClass */
+.hoverAnimGrue { z-index: 100; }
+
+.cursorAntenne { top: 723px; left: 50%; margin-left: -101px; z-index: 220; }
+.cursorBureaux { top: 343px; left: 50%; margin-left: 159px;  z-index: 220; }
+
+.cursorBorne1  { top: 251px; left: 50%; margin-left: 15px;  z-index: 210; }
+.cursorBorne2  { top: 671px; left: 50%; margin-left: 15px;  z-index: 210; }
+.cursorBorne3  { top: 439px; left: 50%; margin-left: 122px; z-index: 210; }
+
+.cursorCuve    { top: 399px; left: 50%; margin-left: -168px; z-index: 230; }
+.cursorPhone   { top: 536px; left: 50%; margin-left: -52px; }
+.cursorBonhomme { top: 414px; left: 50%; margin-left: 77px; }
+.cursorGas     { top: 564px; left: 50%; margin-left: 217px; }
+.cursorGrue    { top: 194px; left: 50%; margin-left: -204px; z-index: 160; }
+.cursorLance   { top: 289px; left: 50%; margin-left: -269px; z-index: 190; }
+.cursorStation { top: 359px; left: 50%; margin-left: 331px; }
+.cursorUsine1  { top: 599px; left: 50%; margin-left: -449px; }
+.cursorHp      { top: 679px; left: 50%; margin-left: -429px; }
+.cursorPompe   { top: 295px; left: 50%; margin-left: -59px; z-index: 220; }
+
+
+
+.cursorTarget:before, .cursorTarget:after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    border: 2px solid #fff;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-border-radius: 20px;
+            border-radius: 20px;
+
+    -webkit-animation: ripple 3s linear infinite;
+            animation: ripple 3s linear infinite;
+}
+
+.cursorTarget:after { -webkit-animation-delay: 1s; animation-delay: 1s; }
+
+@-webkit-keyframes ripple {
+    0% {
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    10% { opacity: 0.5; }
+    60% { opacity: 0; }
+    100% {
+        margin-top: -36px;
+        margin-left: -250%;
+        width: 600%;
+        height: 600%;
+        border-radius: 52px;
+        opacity: 0;
+    }
+}
+
+@keyframes ripple {
+    0% {
+        margin-top: 0;
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+    10% { opacity: 0.5; }
+    60% { opacity: 0; }
+    100% {
+        margin-top: -36px;
+        margin-left: -250%;
+        width: 600%;
+        height: 600%;
+        border-radius: 52px;
+        opacity: 0;
+    }
+}
+
+/*********** LES TOOLTIP ************/
+.tooltip:hover { z-index: 9999; }
+
+.tooltip-content {
+	position: absolute;
+	z-index: 9999;
+	width: 230px;
+	left: 50%;
+	bottom: 70%;
+	font-size: 14px;
+	line-height: 1.4;
+	text-align: center;
+	color: #fffaf0;
+	background: transparent;
+	opacity: 0;
+	margin: 0 0 19px -116px;
+	cursor: default;
+	pointer-events: none;
+
+	-webkit-font-smoothing: antialiased;
+	-webkit-transition: opacity 0.3s 0.3s;
+	        transition: opacity 0.3s 0.3s;
+}
+
+.tooltip:hover .tooltip-content {
+	opacity: 1;
+	pointer-events: auto;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.tooltip-content span {
+	display: block;
+    z-index: 100;
+}
+
+.tooltip-text {
+	border-bottom: 10px solid #fffaf0;
+	overflow: hidden;
+	-webkit-transform: scale3d(0,1,1);
+	transform: scale3d(0,1,1);
+	-webkit-transition: -webkit-transform 0.3s 0.3s;
+	transition: transform 0.3s 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}
+
+.tooltip-inner {
+	background: rgba(62,60,58,0.95);
+	padding: 10px;
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+	webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.tooltip:hover .tooltip-inner {
+	-webkit-transition-delay: 0.3s;
+	transition-delay: 0.3s;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/* FLECHE */
+
+.tooltip-content::after {
+	content: '';
+	bottom: -20px;
+	left: 50%;
+	border: solid transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: transparent;
+	border-top-color: #fffaf0;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+.tooltip-inner ul            { padding: 0; margin: 6px 0 0 15px; }
+.tooltip-inner ul li         { padding-left: 0; list-style-type: none; text-align: left; }
+.tooltip-inner ul li:before  { content: "• "; }
+
+
+/* MOFIFICATION DE CERTAINS TOOLTIPS : */
+.tooltip_content_bureau  { margin: 0 0 18px -206px; width: 410px; }
+.tooltip_content_hp      { margin: 0 0 21px -115px; }
+.tooltip_content_pompe   { margin: 0 0 20px -115px; }
