@@ -11,9 +11,7 @@
         </div>
 
         <div class="nav_footer_sub">
-            <a href="#">English</a>|<!--
-         --><a href="#">French</a>|<!--
-         --><a href="#">Legal mentions</a>
+            <a href="legal-mentions.php">Legal mentions</a>
         </div>
 
         <div class="copyright">

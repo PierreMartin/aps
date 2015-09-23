@@ -1,16 +1,16 @@
-<!--  MENU TOP -->
-<nav class="navtop" id="ancre1">
-       <div class="wrapper">
+<!--  MENU TOP | div servant à pour fixer la 'nav main' au scroll ( dans main.js )-->
+<nav class="navtop">
+       <!-- <div class="wrapper">
            <ul>
-               <li><a href="">ENGLISH</a></li><!--
-             --><li><span>|</span></li><!--     
-             --><li><a href="">FRENCH</a></li>
+               <li><a href="">ENGLISH</a></li>
+               <li><span>|</span></li>
+               <li><a href="">FRENCH</a></li>
            </ul>
-       </div>
+       </div> -->
 </nav>
 
 <!--  MENU MAIN -->
-<nav class="navmain">
+<nav class="navmain" id="ancre1">
    <div class="wrapper">
 
        <!-- ICON MENU -->
@@ -24,7 +24,7 @@
        <!-- FIN ICON MENU -->
 
 
-       <div class="logo"><a href="home.php"><img src="img/logo.png" alt="Logo APS-Export"></a></div> 
+       <div class="logo"><a href="home.php"><img src="img/logo.png" alt="Logo APS-Export"></a></div>
 
        <ul>
            <li>

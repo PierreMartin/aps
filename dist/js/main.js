@@ -313,7 +313,7 @@ var posBloc1;
 
 $(window).scroll(function() {
     posScroll  = $(document).scrollTop();
-    posBloc1   = $('.navtop').position().top+$('.navtop').outerHeight(true);
+    posBloc1   = ($('.navtop').position().top);
     nav        = $(".navmain");
 
     // console.log('position scroll : ' + posScroll);
